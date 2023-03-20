@@ -2,8 +2,6 @@
 import os
 import csv
 
-csvpath = os.path.join('Resources', 'budget_data.csv')
-
 #create a function to sum a list of values
 def sum0(list):
     sum = 0
@@ -28,7 +26,8 @@ def min0(list):
             min = list[i]
             min_and_index = [min, i]
     return min_and_index
-
+#csv now reading in 
+csvpath = os.path.join('Resources', 'budget_data.csv')
 #using location and temporary file to be read by the csv reader
 with open(csvpath) as csvfile:
 
